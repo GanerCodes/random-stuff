@@ -1,0 +1,1 @@
+print(f"File {(a:=input('Enter filename: '))} has been saved!{str(open('_'+a, 'wb').write(bytes([255 - i for i in open(a, 'rb').read()])))[0:0]}")
